@@ -112,9 +112,9 @@ body{ margin:0; padding:0;  background:#fff}
 	.Area1 { height:70vw;}
 	.Area1 .box { padding:2vw; height: 62vw; background: url(m_frame_02.png) repeat-y; background-size: 100%}
 	.Area1 .box .title { width: 50%; height: auto; margin: 0 25vw }
-	.Area1 .box .txt { width: 90%; top:17vw; left: -2vw}
+	.Area1 .box .txt { width: 95%; top:17vw; left: -2vw}
 	.Area1 .box .txt li { width: 50%;}
-	.Area1 .box .txt li p { margin-left:10vw; margin-top:3vw; width: 94%; padding:0; font-size: 4vw; line-height: 7vw; }
+	.Area1 .box .txt li p { margin-top:0; width: 98%; padding:0; font-size: 4vw; line-height: 6vw; }
 	}
 
 
@@ -128,14 +128,14 @@ body{ margin:0; padding:0;  background:#fff}
 .Area2 .box .txt p.t2 { margin:0 auto; height: 30px; margin:10px 50px; font-size: 16px; font-weight: 500; text-align:left; color: #9C9C9C;}
 .Area2 .box .txt li { margin-left:50px; float:left; position:relative; list-style-type: square; font-size: 18px; font-weight: 500; text-align:left; line-height: 30px; color: #000;}
 	@media screen and (max-width:767px){
-	.Area2 .box { padding:2vw; height: 150vw; background: url(m_frame_02.png) repeat-y; background-size: 100%}
+	.Area2 .box { padding:2vw; height: 142vw; background: url(m_frame_02.png) repeat-y; background-size: 100%}
 	.Area2 .box .title { width: 50%; height: auto; margin: 0 25vw }
-	.Area2 .box .txt { width: 179vw; height:92vw; top:5vw; left: 0;}
+	.Area2 .box .txt { width: 179vw; height:78vw; top:5vw; left: 0;}
 	.Area2 .box .txt .time { height: 8vw; width:46vw; left:0; }
 	.Area2 .box .txt .time p { width:100%; margin:0 10vw; padding-top:1.5vw; font-size: 4vw; }
 	.Area2 .box .txt p.t1 { height: 6vw; margin:2vw 10vw; font-size: 5vw;}
 	.Area2 .box .txt p.t2 { height: 5vw; margin:2vw 10vw; font-size: 4vw;}
-	.Area2 .box .txt li { width:45%; margin-left:10vw; font-size: 4vw; line-height: 7vw; }
+	.Area2 .box .txt li { width:45%; margin-left:10vw; font-size: 4vw; line-height: 6vw; }
 	}
 
 
@@ -174,7 +174,7 @@ body{ margin:0; padding:0;  background:#fff}
 	.Area4 .box .icon { top:2vw; } 
 	.Area4 .box .icon img { width:20%; margin-left: 2vw; }
 	.Area4 .box ul { margin:5vw 2vw; width: 76vw} 
-	.Area4 .box li { margin:0 auto; font-size: 4vw; line-height: 7vw;}
+	.Area4 .box li { margin:0 auto; font-size: 4vw; line-height: 6vw;}
 	}
 
 
