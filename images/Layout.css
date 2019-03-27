@@ -107,14 +107,14 @@ body{ margin:0; padding:0;  background:#fff}
 .Area1 .box .title { position:relative;  width: 100%; height: auto }
 .Area1 .box .txt { position:absolute; width: 780px; top:50px; left: 80px;}
 .Area1 .box .txt li { float:left; position:relative; list-style: none}
-.Area1 .box .txt li p { display: block; width: 460px; padding: 10px 30px; font-size: 18px; font-weight: 500; text-align:left; line-height: 30px; color: #000;}
+.Area1 .box .txt li p { display: block; width: 460px; padding: 45px 30px; font-size: 18px; font-weight: 500; text-align:left; line-height: 30px; color: #000;}
 	@media screen and (max-width:767px){
 	.Area1 { height:70vw;}
 	.Area1 .box { padding:2vw; height: 62vw; background: url(m_frame_02.png) repeat-y; background-size: 100%}
 	.Area1 .box .title { width: 50%; height: auto; margin: 0 25vw }
 	.Area1 .box .txt { width: 95%; top:17vw; left: -2vw}
-	.Area1 .box .txt li { width: 50%;}
-	.Area1 .box .txt li p { margin-top:0; width: 98%; padding:0; font-size: 4vw; line-height: 6vw; }
+	.Area1 .box .txt li { width: 47%;}
+	.Area1 .box .txt li p { margin-left:10vw; margin-top:0; width: 98%; padding:0; font-size: 4vw; line-height: 6vw; }
 	}
 
 
@@ -169,7 +169,7 @@ body{ margin:0; padding:0;  background:#fff}
 .Area4 .box ul { position: relative; margin:50px 120px; width: 680px;} 
 .Area4 .box li { position: relative; margin:0 auto; font-size: 18px; font-weight: 500; text-align:left; line-height: 30px; list-style-type: square;}
 	@media screen and (max-width:767px){
-	.Area4 .box { padding:2vw; height: 90vw; background: url(m_frame_02.png) repeat-y; background-size: 100%}
+	.Area4 .box { padding:2vw; height: 98vw; background: url(m_frame_02.png) repeat-y; background-size: 100%}
 	.Area4 .box .title { width: 50%; height: auto; margin: 0 25vw }
 	.Area4 .box .icon { top:2vw; } 
 	.Area4 .box .icon img { width:20%; margin-left: 2vw; }
@@ -189,7 +189,7 @@ body{ margin:0; padding:0;  background:#fff}
 .Area5 .box .pic1 li { float: left; width:43%; height: auto; margin:5px; list-style-type: none;}
 .Area5 .box .pic1 li img { width:100%; height: auto}
 .Area5 .box .pic2 { position:relative; height:auto; margin-left: 100px; }
-.Area5 .box .pic2 .txt { float: left; margin-top: 50px; margin-left: 0; margin-bottom: 20px; }
+.Area5 .box .pic2 .txt { float: left; margin-top: 0; margin-left: 0; margin-bottom: 20px; }
 .Area5 .box .pic2 .txt p { margin: 30px auto 10px; text-align: left; font-size: 30px; font-weight: 900; }
 .Area5 .box .pic2 .txt span { margin: 10px auto; color: #BCBCBC; font-size: 16px;} 
 .Area5 .box .pic2 li { float: left; width:100%; height: auto; margin:20px auto; padding: 0; list-style-type: none;}
