@@ -3,7 +3,7 @@
 
 
 /*base*/
-body{ margin:0; padding:0;  background:#fff}
+body{ margin:0; padding:0;  background:#f2f2f2;}
 
 /*setting*/
 .for_pc {}
@@ -14,8 +14,28 @@ body{ margin:0; padding:0;  background:#fff}
 	}
 
 
+
+
+/*fixer*/
+.fixed_Area {z-index:999; position:fixed; top:50px; right:0px; width:100px; border-radius:100px; font-weight:800; font-size:16px; line-height:48px; font-family:Century Gothic, "?L?n??????",Helvetica; text-align:center;
+			-webkit-transform: rotate3d(0,0,0,0deg) translate3d(0,0,0); transform: rotate3d(0,0,0,0deg) translate3d(0,0,0); -webkit-transform-origin:top right; transform-origin:top right;
+			  -webkit-transition: all 0.2s ease;
+				 -moz-transition: all 0.2s ease;
+				  -ms-transition: all 0.2s ease;
+				   -o-transition: all 0.2s ease;
+					  transition: all 0.2s ease;}
+.fixed_Area a { display:block; text-decoration: none; color: #fff; background:#C6B3A0; }
+.fixed_Area .bbox ul { margin:0; padding:0; list-style:none;}
+.fixed_Area .bbox li { margin:0 0 0 -3px; padding:0; height:48px; background-color:rgb(255, 198, 119);}
+.fixed_Area .bbox li a { letter-spacing:-1px;}
+.fixed_Area .bbox li a:hover { color: #C6B3A0; background-color:rgba(255,255,255,1);}
+
+
+
+
+
 /*all-page*/
-.WRAPPER { position: relative; display:block; margin: 0 auto; padding: 0 0 80px; width:100%;  min-width:1220px; font-family:"�L�n������","Microsoft JhengHei",Helvetica; overflow:hidden}
+.WRAPPER { position: relative; display:block; margin: 0 auto; padding: 0; width:100%;  min-width:1220px; font-family:"Microsoft JhengHei",Helvetica; overflow:hidden}
 .WRAPPER img { border:0px; vertical-align:top;}
 .WRAPPER a { text-decoration:none;}
 		@media screen and (max-width:767px){
@@ -23,19 +43,9 @@ body{ margin:0; padding:0;  background:#fff}
 		.WRAPPER img {  width:100%;  height:auto;}
 	}
 
-	
-/*background*/
-.bgtop  { z-index:-1; position: absolute; top:0; left:0; width:100%; min-width:1220px; height:100%; background: url(PC_main.jpg) no-repeat center top; background-attachment:fixed; }
-
-.footer  { min-width:1220px;text-align:center; padding:0 10px; color: #FFF; font:12px/18px Helvetica; position:relative; margin-bottom:20px}
-@media screen and (max-width:767px){
-	.bgtop_m  { z-index:-1; position: fixed; background: url(m_main.jpg) no-repeat center top; width:100%; min-width: inherit; background-size:100%; height:100%; }
-	.footer { min-width: inherit;text-align:center; padding:0 30px;  margin-bottom:50px; margin-top:20px; color: #000}
-}
-	
 
 /*all-area*/
-.Area { z-index:1; position: relative; margin:0 auto; padding:0; border-radius:0; text-align:center; }
+.Area { z-index:1; width:100%; position: relative; margin:0 auto;  text-align:center; }
 .Area a { position:relative; display:block;} 
 .Area .go_bt {
   -webkit-transition: all 0.2s ease;
@@ -50,7 +60,7 @@ body{ margin:0; padding:0;  background:#fff}
        -o-transform:translateY(-6px);
           transform:translateY(-6px);}
 .Area1220 { margin:0 auto; width:1220px;}
-.Area960 { margin:0 auto; width:960px;}
+.Area960 { width:960px;}
 	@media screen and (max-width:767px){
 		.Area .go_bt:hover { 
 		  -webkit-transform:none;
@@ -63,186 +73,100 @@ body{ margin:0; padding:0;  background:#fff}
 	}
 
 
-/*TOP*/
-.Area_top { position:relative; margin-bottom:0px; height:440px; }
-.Area_top .title { margin-top:80px; left:350px; z-index: 9}
-.Area_top .txt { position: relative; left:400px}
-.Area_top .txt li { float:left; width:15%; margin: 0 auto; font-size: 20px; font-weight: 800;  color:#000; list-style: none}
-.Area_top .txt li a { font-size: 20px; font-weight: 800; color:#000;}
-.Area_top  p { position:relative; text-align:center; width:600px; margin:15px auto; font-size: 20px; font-weight: 800; color:#000;}
-.Area_top .icon-button { position:relative; width: 500px; top:10px; left: 450px; bottom:20px;}
-.Area_top .icon-button li { float:left; height:68px; margin-left:10px; list-style: none}
-.Area_top .icon-button li.icon1 a { display: block; width:68px; height: 68px; background:url(instagram-icon.png)}
-.Area_top .icon-button li.icon1 a:hover{ background:url(instagram-icon-1.png); transition:all 0.1s linear; }
-.Area_top .icon-button li.icon2 a { display: block; width:68px; height: 68px; background:url(facebook-icon.png)}
-.Area_top .icon-button li.icon2 a:hover{ background:url(facebook-icon-1.png); transition:all 0.1s linear; }
-.Area_top .icon-button li.icon3 a { display: block; width:68px; height: 68px; background:url(tumblr-icon.png)}
-.Area_top .icon-button li.icon3 a:hover{ background:url(tumblr-icon-1.png); transition:all 0.1s linear; }
-.Area_top .icon-button li.icon4 a { display: block; width:68px; height: 68px; background:url(pixiv-icon.png)}
-.Area_top .icon-button li.icon4 a:hover{ background:url(pixiv-icon-1.png); transition:all 0.1s linear; }
+
+
+
+/*Area*/	
+.Area_top { position:relative; width:100%; height:500px; background:#C6B3A0;}
+.Area_top .title { padding-top:61px; font-size: 70px; font-weight: 800; color:#fff; }
+.Area_top p { line-height:32px; font-size: 20px; color:#fff;}
+.Area_top p a { color:#fff;}
+.icon-button { position:relative; margin:10px auto; padding:0;  width:350px;  height:70px;}
+.icon-button li { list-style: none; margin:0 10px; }
+.icon-button li.icon { float:left;  transition: transform .3s ease-in-out, box-shadow .3s cubic-bezier(.47, 0, .745, .715), border .3s linear .1s;  }
+.icon-button li.icon.circle:hover {  box-shadow:0px 6px 8px rgba(0,0,0,.3); 
+	-webkit-transform: translateY(-10px); -moz-transform: translateY(-10px); transform: translateY(-10px)}
+
+.circle { border-radius: 100%;}
+h1 { padding: 20px 0; font-size: 36px; font-weight: 800; color:#4c4c4c; }
+.box { width:1000px; border-radius:8px; background: #fff;}
+.tag { position:relative; width:455px; height: 36px; border-radius: 0 36px 36px 0; text-align: left;  background: #C6B3A0;}
+.tag p { margin-left: 160px; color: #fff; line-height: 36px; font-size: 20px;}
+
+.Area1 { position:relative; margin-bottom:25px; margin-top:-100px; height:270px; } 
+.Area1 .words { position:absolute; width: 590px;}
+.Area1 .words li { float:right; list-style: none}
+.Area1 .words li h1 { padding-bottom:0px;}
+.Area1 .words li p {  padding: 0 0 0 140px; font-size: 16px; text-align:right; color: #4c4c4c;}
+.Area1 .avatar { position:absolute; top:35px; right:150px; }
+
+.Area2 { position:relative; margin-bottom:25px; height: 706px; }
+.Area2 ul { padding: 0 0 0 160px; }
+.Area2 ul li { float: left; display: inline;}
+.Area2 ul li.subtitle { display: inline; padding: 0 10px 0 20px; line-height: 40px; font-size: 24px; font-weight: 800; color:#4c4c4c;}
+.Area2 ul li span { display: inline; line-height: 40px; font-size: 16px; color:#C6B3A0;}
+.Area2 ul li p { text-align: left; color: #4c4c4c; font-size: 16px; line-height: 30px; padding: 0; }
+.Area2 ul li.school { float: left; display: inline; width:680px; height: 124px;}
+.Area2 .works { height: 224px; }
+
+.Area3 { position:relative; margin-bottom:25px; height: 533px; }
+.Area3 ul { padding: 0 0 0 160px; }
+.Area3 ul li { float: left; display: inline;}
+.Area3 ul li.subtitle { display: inline; padding: 0 10px 0 20px; line-height: 40px; font-size: 24px; font-weight: 800; color:#4c4c4c;}
+.Area3 ul li span { display: inline; line-height: 40px; font-size: 16px; color:#C6B3A0;}
+.Area3 ul li p { text-align: left; color: #4c4c4c; font-size: 16px; line-height: 30px; padding: 0; }
+.Area3 ul li.school { float: left; display: inline; width:680px; height: 124px;}
+.Area3 .edu {  height: 150px; }
+
+.Area4 { }
+.Area4 .skills { margin: 0 auto; width: 880px; height: 180px;}
+.Area4 .skills ul { }
+.Area4 .skills li { padding: 0 15px; float:left; list-style: none; }
+.Area4 .skills p { padding: 0; font-size: 16px; text-align:center; color: #4c4c4c; }
+
+.Area4 .portfolio { margin: 0 auto; width: 650px; height: 250px; margin-bottom: 50px;}
+.Area4 .portfolio p { padding: 5px 0; font-size: 16px; text-align:center; color: #4c4c4c; }
+.Area4 .portfolio ul { }
+.Area4 .portfolio li { float: left; display: inline; }
+.Area4 .portfolio li.button { margin:15px 25px; width: 250px; height: 50px; background:#E64797; border-radius: 8px; box-shadow: 0 6px 8px rgb(140, 93, 45, .2)}
+.Area4 .portfolio li.button a { padding: 0 10px; line-height: 50px; font-size: 24px; font-weight: 800; color:#fff;}
+
 	@media screen and (max-width:767px){
-		.Area_top { width:85%; margin-left: 4vw; margin-bottom:4vw; height:82vw;}
-		.Area_top .title { margin-top:4vw; left:0;  z-index:1}
-		.Area_top .txt { position: relative; top:1vw; left:3vw}
-		.Area_top .txt li { width:100%; margin: 0 auto; font-size: 4vw; line-height:6vw}
-		.Area_top .txt li a { font-size: 4vw}
-		.Area_top  p { width:100%; margin:4vw 3vw; top:2vw; font-size: 4vw}
-		.Area_top .icon-button { position:relative; width: 100%; left: 13vw}
-		.Area_top .icon-button li { height:auto; margin-left:1vw;}
-		.Area_top .icon-button li.icon1 a { width:16vw; height: 16vw; background:url(instagram-icon.png) no-repeat; background-size: 80%}
-		.Area_top .icon-button li.icon1 a:hover{ background:url(instagram-icon.png) no-repeat }
-		.Area_top .icon-button li.icon2 a { width:16vw; height: 16vw; background:url(facebook-icon.png) no-repeat; background-size: 80%}
-		.Area_top .icon-button li.icon2 a:hover{ background:url(facebook-icon.png) no-repeat }
-		.Area_top .icon-button li.icon3 a { width:16vw; height: 16vw; background:url(tumblr-icon.png) no-repeat; background-size: 80%}
-		.Area_top .icon-button li.icon3 a:hover{ background:url(tumblr-icon.png) no-repeat }
-		.Area_top .icon-button li.icon4 a { width:16vw; height: 16vw; background:url(pixiv-icon.png) no-repeat; background-size: 80%}
-		.Area_top .icon-button li.icon4 a:hover{ background:url(pixiv-icon.png) no-repeat }
-		}
-		
+	.Area_top { height:130vw; }
+	.Area_top .title { padding-top:10vw; font-size: 15vw; }
+	.Area_top p {  font-size: 5vw; padding-bottom: 3vw;}
 
+	h1 { padding: 5vw 2vw 0; font-size: 10vw; }
+	.box { width:95% }
+	.tag { width:75vw; height: 9vw; }
+	.tag p { margin-left: 6vw; line-height: 10vw; font-size: 5vw; text-align: left;}
 
-/*Area1*/	
-.Area1 { position:relative; margin-bottom:0px; height:auto; margin-bottom: 50px;}
-.Area1 .box { position:relative; height: 320px; top:0; background: url(frame_02.png) no-repeat center top;}
-.Area1 .box .title { position:relative;  width: 100%; height: auto }
-.Area1 .box .txt { position:absolute; width: 780px; top:50px; left: 80px;}
-.Area1 .box .txt li { float:left; position:relative; list-style: none}
-.Area1 .box .txt li p { display: block; width: 460px; padding: 45px 30px; font-size: 18px; font-weight: 500; text-align:left; line-height: 30px; color: #000;}
-	@media screen and (max-width:767px){
-	.Area1 { height:70vw;}
-	.Area1 .box { padding:2vw; height: 62vw; background: url(m_frame_02.png) repeat-y; background-size: 100%}
-	.Area1 .box .title { width: 50%; height: auto; margin: 0 25vw }
-	.Area1 .box .txt { width: 95%; top:17vw; left: -2vw}
-	.Area1 .box .txt li { width: 47%;}
-	.Area1 .box .txt li p { margin-left:10vw; margin-top:0; width: 98%; padding:0; font-size: 4vw; line-height: 6vw; }
-	}
+	.Area1 { margin-bottom:3vw; margin-top:-28vw; height:95vw; z-index: 9;}
+	.Area1 .words { position:relative; width: 100%;}
+	.Area1 .words li { float:none; }
+	.Area1 .words li p {  padding: 0 5vw; font-size: 4vw; text-align:center; }
+	.Area1 .avatar { position:relative; margin:0 auto; width: 50%; top:2vw; right:0; }
 
+	.Area2 { margin-bottom:3vw; height: 220vw;}
+	.Area2 ul { padding: 0 5vw; }
+	.Area2 ul li.subtitle { font-size: 5vw; }
+	.Area2 ul li.school { width:100%; height:auto;}
+	.Area2 .works { height: 80vw; }
 
-/*Area2*/	
-.Area2 { position:relative; margin-bottom:0px; height:auto; margin-bottom: 50px;}
-.Area2 .box { position:relative; height: 580px; top:0; background: url(frame_02.png) repeat center top;}
-.Area2 .box .txt { position:relative; width: 780px; height:300px; top:30px; left: 85px;}
-.Area2 .box .txt .time { height: 35px; width:230px; left:110px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; background: #000; }
-.Area2 .box .txt .time p { display: block; width:100%; margin:10px 50px; padding-top:8px; font-size: 20px; font-weight: 500; text-align:left; color: #fff; }
-.Area2 .box .txt p.t1 { margin:5px auto; height: 40px; margin:10px 50px; font-size: 30px; font-weight: 500; text-align:left; color: #b21b1b;}
-.Area2 .box .txt p.t2 { margin:0 auto; height: 30px; margin:10px 50px; font-size: 16px; font-weight: 500; text-align:left; color: #9C9C9C;}
-.Area2 .box .txt li { margin-left:50px; float:left; position:relative; list-style-type: square; font-size: 18px; font-weight: 500; text-align:left; line-height: 30px; color: #000;}
-	@media screen and (max-width:767px){
-	.Area2 .box { padding:2vw; height: 142vw; background: url(m_frame_02.png) repeat-y; background-size: 100%}
-	.Area2 .box .title { width: 50%; height: auto; margin: 0 25vw }
-	.Area2 .box .txt { width: 179vw; height:78vw; top:5vw; left: 0;}
-	.Area2 .box .txt .time { height: 8vw; width:46vw; left:0; }
-	.Area2 .box .txt .time p { width:100%; margin:0 10vw; padding-top:1.5vw; font-size: 4vw; }
-	.Area2 .box .txt p.t1 { height: 6vw; margin:2vw 10vw; font-size: 5vw;}
-	.Area2 .box .txt p.t2 { height: 5vw; margin:2vw 10vw; font-size: 4vw;}
-	.Area2 .box .txt li { width:45%; margin-left:10vw; font-size: 4vw; line-height: 6vw; }
-	}
+	.Area3 { height: 165vw; }
+	.Area3 ul { padding: 0 5vw; }
+	.Area3 ul li.subtitle { font-size: 5vw; }
+	.Area3 ul li.school { width:100%; height:auto;}
+	.Area3 .edu {  height: 52vw; }
 
+	.Area4 .skills { width: 100%; height: 115vw;}
+	.Area4 .skills li { padding: 2.5vw; float: left; width:25%;}
+	.Area4 .skills p { padding: 0; font-size: 3.5vw; }
 
-/*Area3*/	
-.Area3 { position:relative; margin-bottom:0px; height:auto; margin-bottom: 50px;}
-.Area3 .box { position:relative; height: 270px; top:0; background: url(frame_02.png) repeat center top;}
-.Area3 .box ul { position: relative; } 
-.Area3 .box li { float:left; position:relative; top:50px; list-style: none}
-.Area3 .box li.txt { position:relative; width: 400px; height:150px; top:0; left: 80px;}
-.Area3 .box li.txt .time { height: 30px; width:180px; left:110px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; background: #000; }
-.Area3 .box li.txt .time p { display: block; width:100%; margin:10px 50px; padding-top:4px; font-size: 20px; font-weight: 500; text-align:left; color: #fff; }
-.Area3 .box li.txt p.t1 { height: 40px; margin:10px 50px; font-size: 30px; font-weight: 500; text-align:left; color: #b21b1b;}
-.Area3 .box li.txt p.t2 { height: 30px; margin:10px 50px; font-size: 16px; font-weight: 500; line-height:24px; text-align:left; color: #9C9C9C;}
-	@media screen and (max-width:767px){
-	.Area3 .box { padding:2vw; height: 86vw; background: url(m_frame_02.png) repeat-y; background-size: 100%}
-	.Area3 .box .title { width: 50%; height: auto; margin: 0 25vw }
-	.Area3 .box li { margin-top: 5vw; }
-	.Area3 .box li.txt { width: 185vw; height:30vw; left: 0;}
-	.Area3 .box li.txt .time { height: 8vw; width:46vw; left:0;}
-	.Area3 .box li.txt .time p { width:100%; margin:0 10vw; padding-top:1.5vw; font-size: 4vw;}
-	.Area3 .box li.txt p.t1 { height: 6vw; margin:2vw 10vw; font-size: 5vw;}
-	.Area3 .box li.txt p.t2 { height: 6vw; margin:2vw 10vw; font-size: 4vw; line-height:6vw;}
-	}
-
-
-/*Area4*/	
-.Area4 { position:relative; margin-bottom:0px; height:auto; margin-bottom: 50px;}
-.Area4 .box { position:relative; height: 380px; top:0; background: url(frame_02.png) repeat center top;}
-.Area4 .box .icon { position:relative; top:20px; } 
-.Area4 .box .icon img { width:10%; margin-left: 20px; height: 100% }
-.Area4 .box ul { position: relative; margin:50px 120px; width: 680px;} 
-.Area4 .box li { position: relative; margin:0 auto; font-size: 18px; font-weight: 500; text-align:left; line-height: 30px; list-style-type: square;}
-	@media screen and (max-width:767px){
-	.Area4 .box { padding:2vw; height: 98vw; background: url(m_frame_02.png) repeat-y; background-size: 100%}
-	.Area4 .box .title { width: 50%; height: auto; margin: 0 25vw }
-	.Area4 .box .icon { top:2vw; } 
-	.Area4 .box .icon img { width:20%; margin-left: 2vw; }
-	.Area4 .box ul { margin:5vw 2vw; width: 76vw} 
-	.Area4 .box li { margin:0 auto; font-size: 4vw; line-height: 6vw;}
-	}
-
-
-
-
-/*Area5*/	
-.Area5 { position:relative; margin-bottom:0px; height:auto; margin-bottom: 50px;}
-.Area5 .box { height:8450px; top:0; background: url(frame_02.png) repeat-y center top;}
-.Area5 .box .pic1 { position:relative; height:auto; margin-left: 100px;}
-.Area5 .box .pic1 .txt { float: left; width:700px }
-.Area5 .box .pic1 p { text-align: left; font-size: 30px; font-weight: 900; }
-.Area5 .box .pic1 li { float: left; width:43%; height: auto; margin:5px; list-style-type: none;}
-.Area5 .box .pic1 li img { width:100%; height: auto}
-.Area5 .box .pic2 { position:relative; height:auto; margin-left: 100px; }
-.Area5 .box .pic2 .txt { float: left; margin-top: 0; margin-left: 0; margin-bottom: 20px; }
-.Area5 .box .pic2 .txt p { margin: 30px auto 10px; text-align: left; font-size: 30px; font-weight: 900; }
-.Area5 .box .pic2 .txt span { margin: 10px auto; color: #BCBCBC; font-size: 16px;} 
-.Area5 .box .pic2 li { float: left; width:100%; height: auto; margin:20px auto; padding: 0; list-style-type: none;}
-.Area5 .box .pic2 li a { width: 88%; color: #b21b1b; text-align: left; font-size: 20px; font-weight: 900; }
-.Area5 .box .pic2 li a i { position:absolute; margin-top: 2px; margin-left: 2px; width: 60px; height: 24px; background-color: #b21b1b; border-radius: 100px; }
-.Area5 .box .pic2 li a i p { margin: 2px auto; width: 60px; height: 24px; color: #fff; text-align: center; font-size: 14px; }
-.Area5 .box .pic2 li img { width:100%; height: auto}
-	@media screen and (max-width:767px){
-	.Area5 .box { padding:2vw; height: 1085vw; background:url(m_frame_02.png) repeat-y; background-size: 100%}
-	.Area5 .box .title { width: 50%; height: auto; margin: 0 25vw }
-	.Area5 .box .pic1 { margin-left: 1vw;}
-	.Area5 .box .pic1 .txt { left: 0; }
-	.Area5 .box .pic1 p { margin-top: 0; margin-left: 2vw; font-size: 5vw;}
-	.Area5 .box .pic1 li { width:47%; height: auto; margin:1vw; }
-	.Area5 .box .pic2 { margin-left: 2vw; margin-top:-3vw }
-	.Area5 .box .pic2 .txt { float: left; margin-top: 5vw; margin-left: 0; margin-bottom: 2vw; }
-	.Area5 .box .pic2 .txt p { margin: 0 1vw 2vw; font-size: 4vw;}
-	.Area5 .box .pic2 .txt span { margin: 1vw; font-size: 3.5vw;} 
-	.Area5 .box .pic2 li { margin:2vw 1vw 8vw;}
-	.Area5 .box .pic2 li a { width: 96%; font-size: 4vw; z-index: 99;}
-	.Area5 .box .pic2 li a i { margin-top: 1vw; margin-left: 1vw; width: 12vw; height: 4vw;}
-	.Area5 .box .pic2 li a i p { margin: -0.2vw auto; width: 12vw; height: 4vw; font-size: 3vw;}
-	}
-
-
-
-/*Area6*/	
-.Area6 { position:relative; margin-bottom:0px; height:auto; margin-bottom: 50px;}
-.Area6 .box { position:relative; height: 520px; top:0; background: url(frame_02.png) repeat center top;}
-.Area6 .box ul { position: relative; } 
-.Area6 .box li { float:left; position:relative; top:50px; list-style: none}
-.Area6 .box li.txt { position:relative; width: 600px; height:150px; top:0; left: 43px;}
-.Area6 .box li.txt .time { height: 30px; width:120px; left:110px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; background: #000; }
-.Area6 .box li.txt .time p { display: block; width:100%; margin:10px 50px; padding-top:4px; font-size: 20px; font-weight: 500; text-align:left; color: #fff; }
-.Area6 .box li.txt a {  margin:10px 50px; width: 100%; color: #b21b1b; text-align: left; font-size: 20px; font-weight: 900; }
-.Area6 .box li.txt a i { position:absolute; margin-top: 2px; margin-left: 2px; width: 60px; height: 24px; background-color: #b21b1b; border-radius: 100px; }
-.Area6 .box li.txt a i p { margin: 2px auto; width: 60px; height: 24px; color: #fff; text-align: center; font-size: 14px; }
-.Area6 .box li.txt p.t2 { height: 30px; margin:10px 50px; font-size: 16px; font-weight: 500; line-height:16px; text-align:left; color: #9C9C9C;}
-	@media screen and (max-width:767px){
-	.Area6 .box { padding:2vw; height: 104vw; background:url(m_frame_02.png) repeat-y; background-size: 100%;}
-	.Area6 .box .title { width: 50%; height: auto; margin: 0 25vw }
-	.Area6 .box li { top:5vw;}
-	.Area6 .box li.txt { width: 90%; top:0; height: 30vw; left: -10vw}
-	.Area6 .box li.txt .time { height: 8vw; width:30vw; left:0;}
-	.Area6 .box li.txt .time p { width:100%; margin:0 10vw; padding-top:1.5vw; font-size: 4vw;}
-	.Area6 .box li.txt a { margin: 2vw 10vw; width: 96%; font-size: 5vw;}
-	.Area6 .box li.txt a i { margin-top: 1vw; margin-left: 1vw; width: 12vw; height: 4vw;}
-	.Area6 .box li.txt a i p { margin: -0.3vw auto; width: 12vw; height: 4vw; font-size: 3vw;}
-	.Area6 .box li.txt p.t2 { height: 6vw; margin:2vw 10vw; font-size: 4vw; line-height:6vw;}
+	.Area4 .portfolio { width: 100%; height: 100vw; margin-bottom: 10vw;}
 	}
 
 
 
 
 
-/*fixer*/
