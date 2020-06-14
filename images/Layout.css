@@ -132,7 +132,7 @@ h1 { padding: 20px 0; font-size: 36px; font-weight: 800; color:#4c4c4c; }
 .Area4 .portfolio li.button a { padding: 0 10px; line-height: 50px; font-size: 24px; font-weight: 800; color:#fff;}
 
 	@media screen and (max-width:767px){
-	.Area_top { height:120vw; }
+	.Area_top { height:120vw; z-index: -1;}
 	.Area_top .title { padding-top:10vw; font-size: 15vw; }
 	.Area_top p {  font-size: 5vw; padding-bottom: 3vw;}
 	.icon-button { margin:0 auto; padding: 0 7%; width:100%;  height:auto;}
@@ -143,17 +143,18 @@ h1 { padding: 20px 0; font-size: 36px; font-weight: 800; color:#4c4c4c; }
 	.tag { width:75vw; height: 9vw; }
 	.tag p { margin-left: 6vw; line-height: 10vw; font-size: 5vw; text-align: left;}
 
-	.Area1 { margin-bottom:3vw; margin-top:-20vw; height:95vw; z-index: 9;}
+	.Area1 { margin-bottom:3vw; margin-top:-20vw !important; height:95vw; z-index: 9;}
 	.Area1 .words { position:relative; width: 100%;}
 	.Area1 .words li { float:none; }
 	.Area1 .words li p {  padding: 0 5vw; font-size: 4vw; text-align:center; }
 	.Area1 .avatar { position:relative; margin:0 auto; width: 50%; top:2vw; right:0; }
 
 	.Area2 { margin-bottom:3vw; height: 250vw;}
+	.Area2 .works { height: 100vw !important ; }
 	.Area2 ul { padding: 0 5vw; }
 	.Area2 ul li.subtitle { font-size: 5vw; }
 	.Area2 ul li.school { width:100%; height:auto;}
-	.Area2 .works { height: 100vw; }
+
 
 	.Area3 { height: 180vw; }
 	.Area3 ul { padding: 0 5vw; }
