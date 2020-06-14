@@ -105,7 +105,7 @@ h1 { padding: 20px 0; font-size: 36px; font-weight: 800; color:#4c4c4c; }
 .Area2 ul li { float: left; display: inline;}
 .Area2 ul li.subtitle { display: inline; padding: 0 10px 0 20px; line-height: 40px; font-size: 24px; font-weight: 800; color:#4c4c4c;}
 .Area2 ul li span { display: inline; line-height: 40px; font-size: 16px; color:#C6B3A0;}
-.Area2 ul li p { text-align: left; color: #4c4c4c; font-size: 16px; line-height: 30px; padding: 0; }
+.Area2 ul  p { text-align: left; color: #4c4c4c; font-size: 16px; line-height: 30px; padding: 0; }
 .Area2 ul li.school { float: left; display: inline; width:680px; height: 124px;}
 .Area2 .works { height: 224px; }
 
