@@ -153,7 +153,7 @@ h1 { padding: 20px 0; font-size: 36px; font-weight: 800; color:#4c4c4c; }
 	.Area2 ul { padding: 0 5vw; }
 	.Area2 ul li.subtitle { font-size: 5vw; }
 	.Area2 ul li.school { width:100%; height:auto;}
-	.Area2 .works { height: 310px; }
+	.Area2 .works { display: block; height: 20em; }
 		
 	.Area3 { height: 180vw; }
 	.Area3 ul { padding: 0 5vw; }
